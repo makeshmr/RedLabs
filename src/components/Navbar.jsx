@@ -15,8 +15,7 @@ export const Navbar = ({menuOpen,setMenuOpen}) => {
                         href="#home" 
                         className="font-mono text-xl font-bold text-white"
                     >
-                    {" "}
-                    pedro<span className="text-blue-500">.lab/span>
+                    pedro<span className="text-blue-500">.labs</span>
                 </a>
                 <div className="w-10 h-10 flex items-center justify-center text-2xl text-white cursor-pointer z-50 md:hidden" 
                 onClick={() => setMenuOpen((prev) => !prev)}
