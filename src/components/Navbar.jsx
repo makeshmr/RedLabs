@@ -18,7 +18,7 @@ export const Navbar = ({menuOpen,setMenuOpen}) => {
                     {" "}
                     makesred<span className="text-blue-500">.lab</span>
                 </a>
-                <div className="w-7 h-5 relative cursor-pointer z-40 md:hidden" 
+                <div className="w-7 h-5 relative cursor-pointer z-50 md:hidden" 
                 onClick={() => setMenuOpen((prev) => !prev)}
                 aria-label="Toggle menu"
                 role="button"
