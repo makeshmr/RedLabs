@@ -18,7 +18,7 @@ export const Navbar = ({menuOpen,setMenuOpen}) => {
                     {" "}
                     makesred<span className="text-blue-500">.lab</span>
                 </a>
-                <div className="w-7 h-5 relative cursor-pointer z-50 md:hidden" 
+                <div className="w-10 h-10 flex items-center justify-center text-2xl text-white cursor-pointer z-50 md:hidden" 
                 onClick={() => setMenuOpen((prev) => !prev)}
                 >
                     &#9776;
