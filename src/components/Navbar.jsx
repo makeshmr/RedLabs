@@ -13,17 +13,17 @@ export const Navbar = ({menuOpen,setMenuOpen}) => {
                 <div className="className=relative flex justify-center items-center h-16">
                     <a 
                         href="#home" 
-                        className="absolute left-1/2 -translate-x-1/2 font-mono text-xl font-bold text-white"
+                        className="absolute left-1/4 -translate-x-1/2 font-mono text-xl font-bold text-white"
                     >
                     pedro<span className="text-blue-500">.labs</span>
                 </a>
-                <div className="absolute right-0 w-10 h-10 flex items-center justify-center text-2xl text-white cursor-pointer z-50 md:hidden" 
+                <div className="w-10 h-10 flex items-center justify-center text-2xl text-white cursor-pointer z-50 md:hidden" 
                 onClick={() => setMenuOpen((prev) => !prev)}
                 >
                     &#9776;
                 </div>
 
-                <div className="hidden md:flex absolute right-0 items-center space-x-8">
+                <div className="hidden md:flex  items-center space-x-8">
                     <a 
                         href="#home" 
                         className="text-gray-300 hover:text-white transition-colors"
