@@ -3,13 +3,13 @@ import { useState } from 'react';
 import { RevealOnScroll } from './RevealOnScroll';
 
 export const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+        const [formData, setFormData] = useState({
+            name: "",
+            email: "",
+            message: "",
+            });
 
-  const SERVICE_ID = "service_py4tiqy";
+  const SERVICE_ID = "service_dyxwdih";
   const TEMPLATE_ID = "template_5ew9036";
   const PUBLIC_KEY = "i7zwNFvpW_KAZwh2h";
 
