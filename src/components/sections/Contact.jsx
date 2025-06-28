@@ -10,7 +10,7 @@ export const Contact = () => {
             });
 
   const SERVICE_ID = "service_dyxwdih";
-  const TEMPLATE_ID = "template_5ew9036";
+  const TEMPLATE_ID = "template_wxrce8n";
   const PUBLIC_KEY = "i7zwNFvpW_KAZwh2h";
 
   const handleSubmit = (e) => {
@@ -22,7 +22,7 @@ export const Contact = () => {
         alert('Message Sent!');
         setFormData({ name: '', email: '', message: '' });
       })
-      .catch(() => 
+      .catch((error) => 
         alert("Oops! something went wrong. Please try again."));
       };
 
