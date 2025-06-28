@@ -14,8 +14,8 @@ export const Projects = () => {
             </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="p-6 rounded-xl border border-white/10 hover:-translate-y-1 hover:border-blue-500/30 hver:shadow-[0_2px_8px_rgba(59,130,246,0.1)] transition-all">
-                <h3>Exploratory Data Analysis Case Study : Rise in Accidents Cases in USA </h3>
-                <p>
+                <h3 className="text-xl font-bold mb-2">Exploratory Data Analysis Case Study : Rise in Accidents Cases in USA </h3>
+                <p className="text-gray-400">
                     Analyzed 1.3M+ US accident records using Pandas and visualized trends with Seaborn, Plotly, Matplotlib, and Folium.
                      Found a significant rise in accidents post-2020, linked to increased driver aggression amid growing traffic congestion.
                 </p>
@@ -30,6 +30,10 @@ export const Projects = () => {
                             </span>
                     ))}
                 </div>
+                <div className="flex justify-between item-center ">
+                    <a href="https://jovian.com/makeshmr2409/exploratory-data-analysis-case-study-us-accidents" className="text-blue-400 hover:text-blue-300 transition-colors my-4"> View Project 🔗 -</a>
+                </div>
+
                 </div>
             
             </div>
