@@ -1,5 +1,6 @@
 import emailjs from '@emailjs/browser';
 import { useState } from 'react';
+import { RevealOnScroll } from './RevealOnScroll';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,27 +9,26 @@ export const Contact = () => {
     message: '',
   });
 
-  const SERVICE_ID = 'service_py4tiqy';
-  const TEMPLATE_ID = 'template_5ew9036';
-  const PUBLIC_KEY = 'i7zwNFvpW_KAZwh2h';
+  const SERVICE_ID = "service_py4tiqy";
+  const TEMPLATE_ID = "template_5ew9036";
+  const PUBLIC_KEY = "i7zwNFvpW_KAZwh2h";
 
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs
       .sendForm(SERVICE_ID, TEMPLATE_ID, e.target, PUBLIC_KEY)
-      .then(() => {
+      .then((result) => {
         alert('Message Sent!');
         setFormData({ name: '', email: '', message: '' });
       })
-      .catch((error) => {
-        console.error('EmailJS error:', error);
-        alert('Oops! something went wrong. Please try again.');
-      });
-  };
+      .catch(() => 
+        alert("Oops! something went wrong. Please try again."));
+      };
 
   return (
     <section id="contact" className="min-h-screen flex items-center justify-center py-20">
+    <RevealOnScroll>
       <div className="px-4 max-w-xl w-full">
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           Get In Touch
@@ -69,6 +69,7 @@ export const Contact = () => {
           </button>
         </form>
       </div>
+      </RevealOnScroll>
     </section>
   );
 };
