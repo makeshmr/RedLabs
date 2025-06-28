@@ -49,7 +49,9 @@ const devopsSkills = [
 
                             </span>
                             ))}
-                            </div>
+                        </div>
+                    </div>
+
 
                     <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                        <h3 className="text-xl font-bold mb-4">Linux</h3> 
@@ -65,6 +67,7 @@ const devopsSkills = [
                             ))}
                         </div>
                     </div>
+
                     <div className="rounded-xl p-6 hover:-translate-y-1 transition-all">
                        <h3 className="text-xl font-bold mb-4">Devops Tools</h3> 
                        <div className="flex flex-wrap gap-2">
@@ -79,7 +82,6 @@ const devopsSkills = [
                             ))}
                         </div>
                     </div> 
-                </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
