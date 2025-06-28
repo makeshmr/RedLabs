@@ -15,7 +15,7 @@ export const Navbar = ({menuOpen,setMenuOpen}) => {
                         href="#home" 
                         className="absolute left-1/10 -translate-x-1/2 font-mono text-xl font-bold text-white"
                     >
-                    Red.labs<span className="text-blue-500">.labs</span>
+                    Red<span className="text-blue-500">.labs</span>
                 </a>
                 <div className="absolute right-1/5 w-10 h-10 flex items-center justify-center text-2xl text-white cursor-pointer z-50 md:hidden" 
                 onClick={() => setMenuOpen((prev) => !prev)}
