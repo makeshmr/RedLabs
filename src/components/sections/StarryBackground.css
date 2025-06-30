@@ -25,3 +25,28 @@
   0%, 100% { opacity: 0.3; transform: scale(1); }
   50% { opacity: 1; transform: scale(1.4); }
 }
+
+/* 🪐 Meteor Shower */
+.meteor {
+  position: absolute;
+  width: 2px;
+  height: 80px;
+  background: linear-gradient(45deg, white, transparent);
+  opacity: 0.7;
+  transform: rotate(45deg);
+  animation: meteor-fall 3s linear infinite;
+}
+
+@keyframes meteor-fall {
+  0% {
+    transform: translate(0, 0) rotate(45deg);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-600px, 600px) rotate(45deg);
+    opacity: 0;
+  }
+}

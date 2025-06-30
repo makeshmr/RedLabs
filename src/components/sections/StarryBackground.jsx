@@ -10,7 +10,7 @@ export const StarryBackground = () => {
 
     return (
       <span
-        key={i}
+        key={`star-${i}`}
         className="star"
         style={{
           top: `${top}%`,
@@ -22,5 +22,23 @@ export const StarryBackground = () => {
     );
   });
 
-  return <div className="stars-container">{stars}</div>;
+  const meteors = Array.from({ length: 6 }).map((_, i) => {
+    const top = Math.random() * 80; // avoid bottom edge
+    const left = Math.random() * 100;
+    const delay = Math.random() * 10;
+
+    return (
+      <div
+        key={`meteor-${i}`}
+        className="meteor"
+        style={{
+          top: `${top}%`,
+          left: `${left}%`,
+          animationDelay: `${delay}s`,
+        }}
+      ></div>
+    );
+  });
+
+  return <div className="stars-container">{stars}{meteors}</div>;
 };
