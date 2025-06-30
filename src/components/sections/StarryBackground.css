@@ -1,34 +1,27 @@
 .stars-container {
   position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
   overflow: hidden;
+  top: 0;
+  left: 0;
+  background: radial-gradient(ellipse at bottom, #0d1b2a 0%, #000 100%);
   z-index: 0;
-  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
 }
 
-/* Star styling */
 .star {
   position: absolute;
-  display: block;
   width: 2px;
   height: 2px;
   background: white;
   border-radius: 50%;
-  animation: twinkle 2s infinite ease-in-out;
-  opacity: 0.8;
+  opacity: 0.6;
+  animation-name: twinkle;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
 }
 
-/* Randomly position and animate stars */
-.star:nth-child(n) {
-  top: calc(100% * var(--random-top, 0));
-  left: calc(100% * var(--random-left, 0));
-}
-
-/* Twinkle animation */
 @keyframes twinkle {
   0%, 100% { opacity: 0.3; transform: scale(1); }
-  50% { opacity: 1; transform: scale(1.5); }
+  50% { opacity: 1; transform: scale(1.4); }
 }
