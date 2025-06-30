@@ -1,44 +1,45 @@
-import { RevealOnScroll } from "./RevealOnScroll"
-
+import { RevealOnScroll } from "./RevealOnScroll";
+import { StarryBackground } from "./StarryBackground";
 
 export const Home = () => {
-    return <section 
-    id='home' 
-    className="min-h-screen flex items-center justify-center relative"
+  return (
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center relative overflow-hidden"
     >
-        <RevealOnScroll>
+      {/* Stars and meteors in the background */}
+      <StarryBackground />
+
+      <RevealOnScroll>
         <div className="text-center z-10 px-4">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
-                Hi, I'm Makesh 
-            </h1>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent leading-tight">
+            Hi, I'm Makesh
+          </h1>
 
-            <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
-                I'm a DevOps / Site Reliability Engineer with hands-on experience in Linux, AWS, and Azure. I help teams automate processes, boost system reliability, and scale infrastructure using Docker, Kubernetes, and Terraform.
+          <p className="text-gray-400 text-lg mb-8 max-w-lg mx-auto">
+            I'm a DevOps / Site Reliability Engineer with hands-on experience in
+            Linux, AWS, and Azure. I help teams automate processes, boost system
+            reliability, and scale infrastructure using Docker, Kubernetes, and
+            Terraform.
+          </p>
 
-            </p>
-            <div className="flex justify-center space-x-4">
-                <a
-                href="#projects" 
-                className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 
-                hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
-                >
-                   View Projects
+          <div className="flex justify-center space-x-4">
+            <a
+              href="#projects"
+              className="bg-blue-500 text-white py-3 px-6 rounded font-medium transition relative overflow-hidden hover:-translate-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.4)]"
+            >
+              View Projects
+            </a>
 
-                </a>
-
-                <a
-                href="#contact" 
-                className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200
-                hover:-transition-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500"
-                >
-                    Contact Me
-                </a>
-
-            </div>
+            <a
+              href="#contact"
+              className="border border-blue-500/50 text-blue-500 py-3 px-6 rounded font-medium transition-all duration-200 hover:-transition-y-0.5 hover:shadow-[0_0_15px_rgba(59,130,246,0.2)] hover:bg-blue-500"
+            >
+              Contact Me
+            </a>
+          </div>
         </div>
-
-    </RevealOnScroll>
-
-
+      </RevealOnScroll>
     </section>
-}
+  );
+};
