@@ -29,6 +29,10 @@ export const Contact = () => {
         <h2 className="text-3xl font-bold mb-8 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text text-transparent text-center">
           Get In Touch
         </h2>
+         <p className="max-w-xl mx-auto mb-8 text-lg">
+        Have a question, collaboration idea, or just want to say hi? I’d love to hear from you!
+        Whether it's a freelance opportunity or a full-time role — my inbox is always open.
+        </p>
         <form className="space-y-6" onSubmit={handleSubmit}>
           <input
             type="text"
