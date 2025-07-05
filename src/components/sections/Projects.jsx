@@ -118,10 +118,11 @@ export const Projects = () => {
                 </a>
               </div>
             </div>
-
           </div>
         </div>
       </RevealOnScroll>
     </section>
+
+
   );
 };
